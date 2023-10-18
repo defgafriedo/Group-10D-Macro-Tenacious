@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --primaryTextColor: #ffffff;
+    --secondaryTextColor: #000000;
+    --thirdTextColor: #12e1c3;
+    --fourTextColor: #a70a0a;
+  
+    --borderColor: #6b6b6b;
+    --lineColor: #818181;
+  
+    --itemAbu: #b8b8b8;
+  
+    --primaryBackgroundColor: #f3fdff;
+    --secondaryBackgroundColor: #ffffff;
+    --thirdBackgroundColor: #0eb29a;
+  
+    --primaryBtnColor: #12e1c3;
+    --secondaryBtnColor: #0eb29a;
+    --thirdBtnColor: #f3fdff;
+  
+    --primaryIconColor: #ffffff;
+    --secondaryIconColor: #000000;
+    --primaryIconColorHover: #9b9b9b;
+  
+    --itemBorderRadius: 0.7rem;
+  }
+  
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--primaryBackgroundColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 90;
+    }
+}
+
+/* Body */
+
+.wrap-konten {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Memisahkan elemen dengan jarak di antara mereka */
+    align-items: center;
+}
+
+#halaman-daftar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card-daftar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: start;
+    background-color: #c4f7f0;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+    width: 45%;
+
+}
+
+.card-daftar h1 {
+    font-size: 32px;
+    color: #0EB29A;
+
+}
+
+.card-daftar input {
+    margin-bottom: 12px;
+    border: 1px solid #000000;
+}
+
+.input-nama-lengkap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.input-nama-lengkap input {
+    padding: 10px; /* Menggunakan padding agar lebih jelas */
+    margin-right: 10px;
+}
+
+.input-nama-lengkap input:last-child {
+    margin-right: 0;
+}
+
+.label-angka {
+    justify-self: start;
+    margin-bottom: 12px;
+}
+/* Tanggal */
+.tanggal-dropdown {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+}
+
+.tanggal,
+.bulan,
+.tahun {
+    background: #fff;
+    height: 35px;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.container select {
+    border: 2px solid #000000; /* Tambahkan border agar terlihat seperti input */
+    border-radius: 5px; /* Agar sudut terlihat sedikit melengkung */
+    width: 100%; /* Sesuaikan lebar dengan kontainer */
+    height: 45px; /* Sesuaikan tinggi dengan input lainnya */
+  }
+  
+  /* Style untuk opsi di dalam dropdown */
+  .container select option {
+    padding: 10px;
+  }
+
+#tbl-daftar {
+    background-color: var(--secondaryBtnColor); /* Warna latar belakang tombol */
+    border-color: var(--secondaryBtnColor); /* Warna border tombol */
+    color: white; /* Warna teks */
+    width: 80%;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#tbl-daftar:hover {
+    background-color: var(--primaryBtnColor); /* Warna latar belakang saat tombol dihover */
+    border-color: var(--primaryBtnColor); /* Warna border saat tombol dihover */
+}
+
+.pemisah {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem; 
+    margin-bottom: 1rem; 
+    width: 90%;
+}
+
+.pemisah .garis {
+    flex: 1;
+    border: 1px solid black; /* Garis dengan border */
+    margin: 0 0.2rem;
+  }
+
+.pemisah p {
+    text-align: center;
+    margin: 0 0.5rem; /* Margin kiri dan kanan untuk teks "Atau" */
+    color: black;
+}
+
+#tbl-masuk-google {
+    background-image: url('asset/flat-color-icons_google.png'); /* Ganti 'path/to/your/logo-google.png' dengan lokasi gambar logo Google */
+    background-repeat: no-repeat;
+    background-size: 50px;
+    background-position: 20px center; /* Mengatur posisi gambar di kiri tengah */
+    background-color: #ffffff; /* Warna latar belakang tombol */
+    color: #0eb29a; /* Warna teks */
+    border: 2px solid #0eb29a; /* Outline tombol */
+    width: 80%;
+    margin-bottom: 12px;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* Opsional: Untuk mengatur style lain sesuai dengan kebutuhan */
+#tbl-masuk-google .google-text {
+    margin-left: 10px; /* Mengatur jarak antara gambar dan teks */
+  }
+
+#tbl-masuk-google:hover {
+    background-color: var(--primaryBtnColor); /* Warna latar belakang saat tombol dihover */
+    color: #ffffff; /* Warna teks saat tombol dihover */
+}
+
+#tbl-masuk-google span{
+    margin: 0;
+    
+}
+
+#sudah-punya-akun {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  
+}
+
+#sudah-punya-akun a{
+    color:#B20326;
+    margin-left: 5px;
+}
+
+
+

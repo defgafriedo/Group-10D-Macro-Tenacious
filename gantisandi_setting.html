@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="gantisandi_setting.css">
+    <title>ExploreNgalam</title>
+    <link rel="stylesheet" href="gantisandi_setting.css">
+    <link rel="stylesheet" href="navbar_masuk.css">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div id="navbar-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#navbar-template").load("navbar_masuk.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <section id="halaman-ganti-kata-sandi-setting">
+        <div class="wrap">
+            <div class="card-ganti-sandi">
+                <h1>Ganti Kata Sandi</h1>
+
+                <!-- Ganti kata sandi input -->
+                <input type="katasandilama" id="input-katasandilama" class="form-control form-control-lg"
+                    placeholder="Kata Sandi Lama" />
+                <input type="katasandibaru" id="input-katasandibaru" class="form-control form-control-lg"
+                    placeholder="Kata Sandi Baru" />
+                <input type="konfirmasi" id="input-konfirmasi" class="form-control form-control-lg"
+                    placeholder="Konfirmasi Kata Sandi Baru" />
+
+                <!-- Submit button -->
+                <button onclick="window.location.href = 'ubahprofil.html'" type="submit" id="tbl-kirim" class="btn btn-primary btn-lg btn-block">Kirim</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <div id="footer-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer-template").load("footer.html");
+        });
+    </script>
+    <!--end of Footer-->
+</body>
+
+</html>

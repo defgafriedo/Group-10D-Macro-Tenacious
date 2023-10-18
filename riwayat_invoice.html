@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="riwayat_invoice.css">
+    <link rel="stylesheet" href="navbar_profil.html">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Nav -->
+    <div id="navbar-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#navbar-template").load("navbar_profil.html");
+        });
+    </script>
+    <!-- End of Nav -->
+
+    <div class="wrapper">
+        <div class="konten-title">
+            <div>
+                <h1>INVOICE</h1>
+            </div>
+            <div class="search-box">
+                <div class="input-group">
+                    <div class="form-outline">
+                        <input id="search-input" type="search" id="form1" class="form-control" />
+                    </div>
+                    <button id="search-button" type="button" class="btn search-color" style="background-color: #0eb29a;color: white;">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="konten">
+            <div class="sidebar">
+                <div class="sidebar-title">
+                    <span>FILTER INVOICE</span>
+                </div>
+                <div class="menu-item">
+                    <input type="radio" name="filter" id="">
+                    <span>SEMUA</span>
+                </div>
+                <div class="menu-item">
+                    <input type="radio" name="filter" id="">
+                    <span>TIKET</span>
+                </div>
+                <div class="menu-item">
+                    <input type="radio" name="filter" id="">
+                    <span>RESERVASI</span>
+                </div>
+            </div>
+            <div class="list-konten">
+                <div class="konten-item">
+                    <div class="konten-header">
+                        <h6 class="header-reservasi">RESERVASI</h6>
+                        <p class="header-tanggal">30 Oktober 2023</p>
+                        <h6>RS0001/20230827/REV</h6>
+                        <p class="header-status">lunas</p>
+                    </div>
+                    <div class="konten-desc">
+                        <div class="item-title-desc">
+                            <div class="item-profile">
+                                <img src="asset/status/wisata.png" alt="">
+                                <div class="item-identity">
+                                    <div class="item-identity-title">JATIMPARK 1</div>
+                                    <div class="item-identity-desc">Wisata</div>
+                                    <div class="item-desc">
+                                        <div>Orang</div>
+                                        <div>x5</div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div>Pemandu Lokal</div>
+                                        <div>x1</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-desc-side">
+                            <h6>Metode Bayar : </h6>
+                            <img src="asset/invoice/bca.png" alt="">
+                            <h6>BCA</h6>
+
+                        </div>
+                        <div class="item-action">
+                            <div class="item-action-desc">
+                                <div class="item-price">
+                                    <h6>TOTAL BIAYA</h6>
+                                    <p>Rp. 700.000</p>
+                                </div>
+                                <input onclick="window.location.href = 'invoice_reservasi.html'" type="button" class="item-action-button" value="Detail">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="konten-item">
+                    <div class="konten-header">
+                        <h6 class="header-reservasi">TIKET</h6>
+                        <p class="header-tanggal">10 Oktober 2023</p>
+                        <h6>TK0001/20230827/TIK</h6>
+                        <p class="header-status">lunas</p>
+                    </div>
+                    <div class="konten-desc">
+                        <div class="item-title-desc">
+                            <div class="item-profile">
+                                <img src="asset/status/wisata.png" alt="">
+                                <div class="item-identity">
+                                    <div class="item-identity-title">JATIMPARK 1</div>
+                                    <div class="item-identity-desc">Wisata</div>
+                                    <div class="item-desc">
+                                        <div>Orang</div>
+                                        <div>x2</div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div>Pemandu Lokal</div>
+                                        <div>-</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-desc-side">
+                            <h6>Metode Bayar : </h6>
+                            <img src="asset/invoice/bca.png" alt="">
+                            <h6>BCA</h6>
+
+                        </div>
+                        <div class="item-action">
+                            <div class="item-action-desc">
+                                <div class="item-price">
+                                    <h6>TOTAL BIAYA</h6>
+                                    <p>Rp. 220.000</p>
+                                </div>
+                                <input onclick="window.location.href = 'invoice-tiket.html'" type="button" class="item-action-button" value="Detail">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="konten-item">
+                    <div class="konten-header">
+                        <h6 class="header-reservasi">RESERVASI</h6>
+                        <p class="header-tanggal">27 Agustus 2023</p>
+                        <h6>RS0001/20230827/REV</h6>
+                        <p class="header-status">lunas</p>
+                    </div>
+                    <div class="konten-desc">
+                        <div class="item-title-desc">
+                            <div class="item-profile">
+                                <img src="asset/status/wisata.png" alt="">
+                                <div class="item-identity">
+                                    <div class="item-identity-title">JATIMPARK 1</div>
+                                    <div class="item-identity-desc">Wisata</div>
+                                    <div class="item-desc">
+                                        <div>Orang</div>
+                                        <div>x2</div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div>Pemandu Lokal</div>
+                                        <div>x2</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-desc-side">
+                            <h6>Metode Bayar : </h6>
+                            <img src="asset/invoice/bca.png" alt="">
+                            <h6>BCA</h6>
+
+                        </div>
+                        <div class="item-action">
+                            <div class="item-action-desc">
+                                <div class="item-price">
+                                    <h6>TOTAL BIAYA</h6>
+                                    <p>Rp. 240.000</p>
+                                </div>
+                                <input type="button" class="item-action-button" value="Detail">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="konten-item">
+                    <div class="konten-header">
+                        <h6 class="header-reservasi">RESERVASI</h6>
+                        <p class="header-tanggal">27 Agustus 2023</p>
+                        <h6>RS0001/20230827/REV</h6>
+                        <p class="header-status">lunas</p>
+                    </div>
+                    <div class="konten-desc">
+                        <div class="item-title-desc">
+                            <div class="item-profile">
+                                <img src="asset/status/wisata.png" alt="">
+                                <div class="item-identity">
+                                    <div class="item-identity-title">JATIMPARK 1</div>
+                                    <div class="item-identity-desc">Wisata</div>
+                                    <div class="item-desc">
+                                        <div>Orang</div>
+                                        <div>x2</div>
+                                    </div>
+                                    <div class="item-desc">
+                                        <div>Pemandu Lokal</div>
+                                        <div>x2</div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-desc-side">
+                            <h6>Metode Bayar : </h6>
+                            <img src="asset/invoice/bca.png" alt="">
+                            <h6>BCA</h6>
+
+                        </div>
+                        <div class="item-action">
+                            <div class="item-action-desc">
+                                <div class="item-price">
+                                    <h6>TOTAL BIAYA</h6>
+                                    <p>Rp. 240.000</p>
+                                </div>
+                                <input type="button" class="item-action-button" value="Detail">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- <div class="konten-pagination">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link pagination-text" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link pagination-text" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link pagination-text" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link pagination-text" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link pagination-text" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div> -->
+    </div>
+
+
+
+     <!-- Footer -->
+     <div id="footer-template">
+
+     </div>
+ 
+     <script>
+         $(function () {
+             $("#footer-template").load("footer.html");
+         });
+     </script>
+     <!-- End of Footer -->
+</body>
+
+</html>

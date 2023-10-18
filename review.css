@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+
+#konten {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0% 5% 0%;
+  align-items: center;
+  gap: 50px;
+}
+
+.title-img img {
+  width: 100%;
+  height: auto;
+}
+
+.title-desc {
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 2% 2% 2% 2%;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title-desc h1 {
+  font-size: large;
+}
+
+.konten-star {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: smaller;
+}
+.konten-star h4 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: medium;
+}
+
+i.icon-star-color {
+  color: yellow;
+}
+
+.konten-filter {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+}
+
+.konten-filter-s {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-size: small;
+  padding: 5px 5px 5px 5px;
+}
+
+.review-place {
+  display: flex;
+  justify-content: space-around;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 22%;
+  gap: 10px;
+  border: 1px solid #c4f7f0;
+  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 1% 1% 1% 1%;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.review-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.review-konten {
+  width: 80%;
+  font-size: xx-small;
+}
+
+.review-konten p {
+  font-size: small;
+}

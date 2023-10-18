@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
+  --thirdTextColor: #12e1c3;
+  --fourTextColor: #a70a0a;
+
+  --borderColor: #6b6b6b;
+  --lineColor: #818181;
+
+  --itemAbu: #b8b8b8;
+
+  --primaryBackgroundColor: #f3fdff;
+  --secondaryBackgroundColor: #ffffff;
+  --thirdBackgroundColor: #0eb29a;
+
+  --primaryBtnColor: #0a8561;
+  --secondaryBtnColor: #0eb29a;
+  --thirdBtnColor: #f3fdff;
+
+  --primaryIconColor: #ffffff;
+  --secondaryIconColor: #000000;
+  --primaryIconColorHover: #9b9b9b;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+
+/* Style Total Pembayaran */
+.bayar_wrapper {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+}
+
+.pembayaran {
+    padding: 2rem 0;
+    width: 50rem;
+    margin-top: 70px;
+}
+
+.bayar {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin: 20px 0;
+}
+
+.bayar {
+    background: var(--secondaryBackgroundColor);
+    padding: 1rem;
+    border-radius: var(--itemBorderRadius);
+    box-shadow: 4px 5px 7px -2px rgba(0, 0, 0, 0.5);
+    /* border: 1px solid var(--borderColor); */
+}
+
+.bayar_atas, .bayar_bawah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.bayar_atas h6 {
+    color: var(--itemAbu);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.bg-icon {
+    background-color: var(--fourTextColor);
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-kiri {
+    height: 17px;
+    width: 17px;
+    fill: var(--primaryIconColor);
+}
+/* End of Total Pembayaran */
+
+
+
+/* Gambar & Radio */
+.verif {
+    color: var(--itemAbu);
+    margin-bottom: 20px;
+}
+
+.image-row, .radio-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* .image-item {
+    margin: 5px;
+} */
+
+.image-item img {
+    max-width: 100px;
+    height: 100px;
+    border-radius: var(--itemBorderRadius);
+}
+
+.radio-item input {
+    border: 2px solid #8f8f8f;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+/* End */
+
+
+
+/* Style Detail Pemesanan */
+.pesanan {
+    padding: 2rem 0;
+}
+
+.proses {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 90px;
+}
+
+.detail {
+    background: var(--secondaryBackgroundColor);
+    padding: 1rem;
+    border-radius: var(--itemBorderRadius);
+    margin: 20px 0;
+    box-shadow: 4px 5px 7px -2px rgba(0, 0, 0, 0.5);
+}
+
+.lingkaran-satu {
+    background-color: var(--fourTextColor);
+    height: 27px;
+    width: 27px;
+    border-radius: 50px;
+    color:var(--primaryTextColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-satu {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.atur-detail {
+    color: var(--fourTextColor);
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.lingkaran-dua {
+    background-color: var(--itemAbu);
+    height: 27px;
+    width: 27px;
+    border-radius: 50px;
+    color:var(--primaryTextColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-dua {
+    margin-top: 6px;
+    font-size: 12px;
+}
+
+.bayar-detail {
+    color: var(--itemAbu);
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.garis-tengah {
+    width: 80px; 
+    height: 2px;
+    background-color: var(--itemAbu);
+}
+
+.jatim {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.garis-panjang {
+    width: 340px;
+    height: 2px;
+    background-color: var(--itemAbu);
+}
+
+.biaya-gabung {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.detail-bawah {
+    margin-top: 10px;
+}
+
+.text-abu {
+    color: var(--itemAbu);
+}
+
+.contact-item {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contact-item-icon {
+    background: var(--secondaryBackgroundColor);
+    width: 20px;
+    height: 20px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-icon svg {
+    fill: var(--itemAbu);
+}
+
+.contact-item-detail h6 {
+    margin-top: 0.3rem;
+}
+/* Style of Detail Pemesanan */
+
+
+
+/* Style button */
+.custom-button {
+    padding: 10px 20px;
+    background-color: var(--secondaryBtnColor);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.custom-button:hover {
+    background-color: var(--primaryBtnColor);
+}
+
+.custom-button:active {
+    background-color: var(--secondaryBtnColor);
+}
+
+.btn-pesan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+/* End of Style Button */

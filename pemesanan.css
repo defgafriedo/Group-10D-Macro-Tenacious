@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --primaryTextColor: #ffffff;
+    --secondaryTextColor: hsl(0, 0%, 0%);
+    --thirdTextColor: #12E1C3;
+
+    --borderColor: #12E1C3;
+    --lineColor: #818181;
+
+    --primaryBackgroundColor: #F3FDFF;
+    --secondaryBackgroundColor: #ffffff;
+    --thirdBackgroundColor: #0EB29A;
+
+
+    --primaryBtnColor: #0a8561;
+    --secondaryBtnColor: #0eb29a;
+    --thirdBtnColor: #f3fdff;
+
+    --primaryIconColor: #000000;
+    --primaryIconColorHover: #ffffff;
+
+    --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: var(--primaryBackgroundColor);
+}
+
+a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 90;
+    }
+}
+
+/* Logo and Navigasi */
+
+.logo {
+    max-width: 105px;
+}
+
+.menu {
+    float: right;
+}
+
+nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: var(--thirdBackgroundColor);
+    z-index: 1;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    color: var(--primaryTextColor);
+    text-align: center;
+    padding: 0px 16px 0px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: var(--thirdTextColor);
+    text-decoration: none;
+}
+
+/* End of nav */
+
+.detail_pemesanan {
+    align-items: center;
+    /* display: inline; */
+    justify-content: center;
+    text-align: center;
+    color: #0EB29A;
+    padding: 50px 0 10px 0;
+    font-weight: bold;
+}
+
+.wrap {
+    margin-top: auto;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.pesanan_wrapper {
+    display: flex;
+    /* grid-template-columns: 1fr 2fr; */
+    /* gap: 2rem; */
+    justify-content: center;
+    background-color: #12e1c340;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.detail-pemesanan {
+    text-align: center;
+    margin: 10px;
+    margin-top: 70px;
+}
+
+.pemesanan {
+    padding: 2rem 0;
+    width: 50rem;
+    width: 1500px;
+    height: 335px;
+    background-color: #ffffff;
+    position: relative;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.detail-tiket {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 15px 0px 20px 0px;
+}
+
+.judul-harga-tiket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.harga-tiket {
+    color: #B20326;
+}
+
+.judul-harga-tiket h3 {
+    font-weight: bold;
+    margin: 0px 0px 0px 40px;
+}
+
+.list-detail-tiket {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin: 30px 20px;
+}
+
+.list-detail-tiket>ul {
+    margin-left: 10px;
+}
+
+.list-detail-tiket li {
+    margin-bottom: 6px;
+}
+
+.tbl-ubah-pesanan {
+    display: flex;
+    align-self: flex-end;
+    justify-self: flex-end;
+    width: 120px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--secondaryBtnColor);
+    border:  var(--secondaryBtnColor);
+    margin: 20px 100px;
+}
+
+.text-center button {
+    background-color: var(--secondaryBtnColor);
+    border: var(--secondaryBtnColor);
+}
+
+.tbl-ubah-pesanan:hover,
+.btn-pesan:hover {
+    background-color: var(--primaryBtnColor);
+    /* Warna latar belakang saat tombol dihover */
+    border-color: var(--primaryBtnColor);
+    /* Warna border saat tombol dihover */
+}
+
+.detail-pengunjung {
+    align-items: center;
+    /* display: inline; */
+    justify-content: center;
+    text-align: center;
+    color: #0EB29A;
+    padding: 50px 0 10px 0;
+    font-weight: bold;
+}
+
+#form-detail-pengunjung {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#form-detail-pengunjung>.card {
+    width: 65%;
+    border: none;
+    background-color: #12e1c340;
+    padding: 30px;
+}
+
+.form-control-lg {
+    line-height: 30px !important;
+}
+
+#form-detail-pengunjung>.card>.card-body>.form-group>label {
+    margin-left: 5px;
+    color: grey;
+    font-weight: 500;
+}
+
+select, .btn-plus, .btn-min {
+    cursor: pointer;
+}
+
+input.switch {
+    position: relative;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 35px !important;
+    height: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    background: #ccc;
+    transition: box-shadow 0.3s ease-in-out, padding 0.25s ease-in-out;
+    transition-delay: 0.1s, 0s;
+}
+
+input.switch:focus {
+    border: 0;
+    outline: 0;
+}
+
+input.switch:checked {
+    transition-delay: 0s, 0s;
+    box-shadow: inset 0 0 0 2.62857em #00c169 !important;
+    padding-left: 15px;
+}
+
+input.switch:before {
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    margin: 3px;
+    background-color: #fff;
+    border-radius: 2.1em;
+    transition: all 0.1s ease 0.1s;
+}
+
+input.switch:before,
+input.switch:after {
+    content: "";
+    display: block;
+}
+
+input.switch:active::before {
+    transition: all 0.1s ease 0.05s;
+}
+

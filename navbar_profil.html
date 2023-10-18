@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="navbar_profil.css" />
+  <title>Navbar</title>
+</head>
+
+<body>
+  <!-- Nav -->
+  <nav>
+    <div class="wrapper">
+      <a class="no-hover" href="halaman_dashboard.html">
+        <img src="images/Logo.PNG" alt="Logo" class="logo" />
+      </a>
+      <div class="menu">
+        <ul>
+          <li class="hvr"><a href="listwisata.html"><b>Daftar Wisata</b></a></li>
+          <li class="hvr"><a href="tentang.html"><b>Tentang Kami</b></a></li>
+          <li class="hvr"><a href="status_reservasi.html"><b>Status Reservasi</b></a></li>
+          <li class="hvr"><a href="riwayat_invoice.html"><b>Riwayat Invoice</b></a></li>
+          <li>
+            <div id="profil-button">
+              <ul>
+                <li class="inisial"><b>SG</b></li>
+                <li>
+                  <p href="#">Shania Gracia<i class="fas fa-angle-down"></i></p>
+                  <ul class="dropdown">
+                    <li><a href="profil.html">Profile</a></li>
+                    <li><a href="ubahprofil.html">Pengaturan</a></li>
+                    <li><a href="halaman_dashboard.html">Keluar</a></li>
+                  </ul>
+            </div>
+          </li>
+        </ul>
+        </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Nav -->
+
+</body>
+
+<script>
+  $(document).ready(function () {
+    $('.menu').find('a.active').removeClass('active');
+
+    var sPath = window.location.pathname;
+    var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
+    $('.menu').find('a[href="' + sPage + '"]').addClass('active');
+
+  });
+
+</script>
+
+
+
+
+</html>

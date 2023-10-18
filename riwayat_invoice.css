@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+.konten-title {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 8% 5% 35%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.search-box {
+  align-items: flex-end;
+  z-index: -1;
+}
+
+#konten {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 8% 5% 8%;
+  gap: 11%;
+}
+
+.sidebar {
+  display: flex;
+  width: 20%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  display: flex;
+  width: 313px;
+  padding: 16px 30% 16px 30%;
+  align-items: center;
+  background: #037867;
+  gap: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-item {
+  display: flex;
+  width: 313px;
+  padding: 16px 30% 16px 30%;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  gap: 10px;
+}
+
+.list-konten {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c4f7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 3% 0% 3% 0%;
+}
+
+.search-color {
+  background-color: #0eb29a;
+}
+
+.search-color:hover {
+  background-color: #037867;
+}
+
+.konten-item {
+  width: 85%;
+  margin: 2% 5% 2% 5%;
+  background-color: #ffffff;
+  height: 180px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 3%;
+  display: flex;
+  flex-direction: column;
+}
+
+.konten-header {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  align-items: baseline;
+}
+
+.header-reservasi {
+  font-weight: 700;
+}
+
+.header-tanggal {
+  color: #0eb29a;
+  font-size: xx-small;
+}
+
+.header-status {
+  padding: 1%;
+  background-color: #0eb29a;
+  border-radius: 10px;
+  font-size: x-small;
+  color: #ffffff;
+}
+
+.konten-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.item-profile {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.item-profile img {
+  width: 85px;
+  height: 67.5px;
+}
+
+.item-identity {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 100px;
+}
+
+.item-identity-title {
+  font-size: small;
+  font-weight: 600;
+}
+
+.item-identity-desc {
+  font-size: small;
+}
+
+.item-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 90%;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: row;
+  font-size: x-small;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-desc-side {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.item-desc-side img {
+  width: 30px;
+  height: 30px;
+}
+
+.item-desc-side h6 {
+  font-size: small;
+}
+
+.item-action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.item-price {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item-price h6 {
+  font-size: small;
+}
+
+.item-price p {
+  font-size: x-small;
+}
+
+.item-action-title h6 {
+  display: flex;
+  justify-content: center;
+  background-color: #037867;
+  color: white;
+}
+
+.item-action-button {
+  background-color: #0eb29a;
+  font-size: small;
+  border-style: none;
+  color: white;
+  height: 50%;
+  width: 130%;
+  border-radius: 7px;
+}
+
+.item-action-button:hover {
+  background-color: #037867;
+  font-size: small;
+  border-style: none;
+  color: white;
+  height: 50%;
+  width: 130%;
+  border-radius: 7px;
+}
+
+.konten-pagination {
+  display: flex;
+  margin-left: 56%;
+}
+
+.pagination-text {
+  color: #0eb29a;
+}
+
+.pagination-text:hover {
+  color: #ffffff;
+  background-color: #0eb29a;
+}

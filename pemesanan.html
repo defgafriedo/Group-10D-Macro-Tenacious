@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="pemesanan.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="navbar_profil.css">
+    <title>Detail Pesanan</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div id="navbar-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#navbar-template").load("navbar_profil.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <section class="wrap">
+        <div class="container-fluid pt-5 pb-5 daftarwisata">
+            <div class="detail_pemesanan">
+                <h1>Detail Pesanan</h1>
+            </div>
+        </div>
+        <section class="pesanan_wrapper">
+            <div class="pemesanan">
+                <div class="detail-tiket">
+                    <div class="judul-harga-tiket">
+                        <h3>Tiket Jatim Park (Weekend)</h3>
+                        <h3 class="harga-tiket">Rp 110.000</h3>
+                    </div>
+                    <div class="list-detail-tiket">
+                        <ul>
+                            <li>Konfirmasi instan</li>
+                            <li>Sudah termasuk tiket masuk dan wahana</li>
+                            <li>Harga sudah termasuk pajak</li>
+                            <li>Tiket berlaku ditanggal terpilih</li>
+                            <li>Tiket berlaku untuk 1 orang</li>
+                            <li>Anak dengan tinggi diatas 85cm wajib mempunyai tiket</li>
+                        </ul>
+
+                        <button onclick="window.location.href = 'ticket.html'" type="button" class="tbl-ubah-pesanan">Ubah Pesanan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="detail-pengunjung">
+            <h2>Detail Pengunjung</h2>
+        </div>
+        <section id="form-detail-pengunjung">
+            <div class="card">
+                <div class="card-body" style="padding: 10px 50px;">
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control form-control-lg" name="nama_lengkap"
+                            placeholder="Nama Lengkap">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="email" class="form-control form-control-lg" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group mb-3">
+                        <input type="text" class="form-control form-control-lg" name="no_telp"
+                            placeholder="Nomor Telepon">
+                    </div>
+                    <div class="form-group mb-3 d-flex align-items-center justify-content-end">
+                        <input type="checkbox" value="1" class="switch">
+                        <label> Sama dengan profil </label>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="jumlah-tiket" class="col-3 fs-5 col-form-label">Jumlah Tiket</label>
+                        <div class="col-4">
+                            <input type="text" class="form-control form-control-lg" id="jumlah-tiket" value="110000" readonly>
+                            <input type="hidden" class="form-control form-control-lg" id="jumlah-tiket-hidden" name="jumlah_tiket" value="110000" readonly>
+                        </div>
+                        <label class="col-2 fs-5 col-form-label text-end">/org</label>
+                        <div class="col-3 mt-2">
+                            <span class="badge bg-secondary fs-5 btn-min">-</span>
+                            <label class="fs-5 px-2 count">1</label>
+                            <span class="badge bg-secondary fs-5 btn-plus">+</span>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-3 fs-5 col-form-label">Pilih Tanggal</label>
+                        <div class="col-3">
+                            <select name="tanggal" class="form-select form-control-lg">
+                                <option value="">Tgl</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <select name="bulan" class="form-select form-control-lg">
+                                <option value="">Bln</option>
+                                <option value="Januari">Januari</option>
+                                <option value="Februari">Februari</option>
+                                <option value="Maret">Maret</option>
+                                <option value="April">April</option>
+                                <option value="Mei">Mei</option>
+                                <option value="Juni">Juni</option>
+                                <option value="Juli">Juli</option>
+                                <option value="Agustus">Agustus</option>
+                                <option value="September">September</option>
+                                <option value="Oktober">Oktober</option>
+                                <option value="November">November</option>
+                                <option value="Desember">Desember</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <select name="tahun" class="form-select form-control-lg">
+                                <option value="">Thn</option>
+                                <option value="2023">2023</option>
+                                <option value="2024">2024</option>
+                                <option value="2025">2025</option>
+                                <option value="2026">2026</option>
+                                <option value="2027">2027</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="total-harga" class="col-3 fs-5 col-form-label">Total Harga</label>
+                        <div class="col-9">
+                            <input type="text" class="form-control form-control-lg text-end" id="total-harga" readonly>
+                        </div>
+                    </div>
+                    <div class="form-group mb-3">
+                        <select name="metode_pembayaran" class="form-select form-control-lg">
+                            <option value="">-- Pilih Metode Pembayaran --</option>
+                            <option value="bca">BCA</option>
+                            <option value="bri">BRI</option>
+                            <option value="bni">BNI</option>
+                            <option value="linkaja">Link Aja</option>
+                            <option value="dana">Dana</option>
+                            <option value="gopay">Gopay</option>
+                        </select>
+                    </div>
+                    <div class="text-center">
+                        <button onclick="window.location.href = 'pembayaran_tiket.html'" type="button" class="btn btn-success py-2 w-25 btn-pesan">Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</body>
+
+<script type='text/javascript'
+    src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
+
+<script>
+    $(function () {
+        let jumlah_tiket = $('#jumlah-tiket-hidden').val();
+        $('#total-harga').val(jumlah_tiket);
+
+        let count = 1;
+
+        $('.btn-plus').on('click', function () {
+            var n = count + 1;
+            count++;
+
+            $(this).parent().find('label').text(n);
+
+            let jumlah_tiket = $('#jumlah-tiket, #jumlah-tiket-hidden').val(110000 * n);
+            $('#total-harga').val(jumlah_tiket.val());
+
+            console.log($('#jumlah-tiket-hidden').val());
+        })
+
+        $('.btn-min').on('click', function () {
+            let countVal = $(this).parent().find('label').text();
+            if (countVal != 1) {
+                var n = count - 1;
+                count--;
+
+                $(this).parent().find('label').text(n);
+
+                let jumlah_tiket = $('#jumlah-tiket-hidden').val();
+                jumlah_tiket = $('#jumlah-tiket-hidden').val(jumlah_tiket - 110000);
+
+                $('#jumlah-tiket, #total-harga').val(jumlah_tiket.val());
+            }
+
+            console.log($('#jumlah-tiket-hidden').val());
+        })
+
+        $('#jumlah-tiket, #total-harga').inputmask({ alias: "currency", prefix: 'Rp ' });
+    });
+</script>
+<!-- Footer -->
+<div id="footer-template">
+
+</div>
+
+<script>
+    $(function () {
+        $("#footer-template").load("footer.html");
+    });
+</script>
+<!--end of Footer--> <!-- Footer -->
+<div id="footer-template">
+
+</div>
+
+<script>
+    $(function () {
+        $("#footer-template").load("footer.html");
+    });
+</script>
+<!--end of Footer-->
+
+</html>

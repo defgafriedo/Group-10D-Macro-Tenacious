@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
+  --thirdTextColor: #12e1c3;
+  --fourTextColor: #a70a0a;
+
+  --borderColor: #6b6b6b;
+  --lineColor: #818181;
+
+  --primaryBackgroundColor: #f3fdff;
+  --secondaryBackgroundColor: #ffffff;
+  --thirdBackgroundColor: #0eb29a;
+
+  --primaryBtnColor: #12e1c3;
+  --secondaryBtnColor: #0eb29a;
+
+  --primaryIconColor: #ffffff;
+  --secondaryIconColor: #000000;
+  --primaryIconColorHover: #ffffff;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+
+
+.background-image {
+    background-image: url('https://media.istockphoto.com/id/181928587/id/foto/pemandangan-udara-puncak-gunung-di-kabut.jpg?s=612x612&w=0&k=20&c=1ZYOMx5DGcVeP2uEHz68Y9vCLgUQ_oPz4hyHMzowOIc=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover_ubah {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid_2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(18, 225, 194, 0.842);
+  height: 400px;
+  width: 600px;
+  border-radius: 9px;
+  margin-top: 80px;
+}
+
+.bagian_kiri {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 130px;
+}
+
+
+.foto_profil img {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  object-fit: cover;
+}
+
+.foto_profil p {
+  text-align: center;
+}
+
+.title_btn {
+  margin-top: 17px;
+}
+
+.btn-item {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+  background-color: #ffffff;
+  height: 40px;
+  width: 150px;
+  border-radius: 6px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #3a3a3a;
+  border: 2px solid #cacaca;
+}
+
+.btn-item-icon svg {
+  width: 15px;
+  height: 15px;
+  fill: var(--secondaryIconColor);
+}
+
+
+
+
+.data_pengguna p {
+  margin-bottom: 10px;
+}
+
+.bagian_kanan {
+  display: flex;
+  align-items: center;
+}
+
+.bg {
+  background-color: #ffffff;
+  height: 30px;
+  width: 250px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
+  --thirdTextColor: #12e1c3;
+  --fourTextColor: #a70a0a;
+
+  --borderColor: #6b6b6b;
+  --lineColor: #818181;
+
+  --itemAbu: #b8b8b8;
+
+  --primaryBackgroundColor: #f3fdff;
+  --secondaryBackgroundColor: #ffffff;
+  --thirdBackgroundColor: #0eb29a;
+
+  --primaryBtnColor: #0a8561;
+  --secondaryBtnColor: #0eb29a;
+  --thirdBtnColor: #f3fdff;
+
+  --primaryIconColor: #ffffff;
+  --secondaryIconColor: #000000;
+  --primaryIconColorHover: #9b9b9b;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+/* Style Footer */
+footer {
+    background: var(--thirdBackgroundColor);
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.info {
+    margin-bottom: 20px;
+}
+
+.logo-kiri img {
+    justify-content: center;
+    width: 70%;
+}
+
+.ucapan {
+    letter-spacing: 0.8px;
+    text-align: justify;
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.detail-item {
+    display: flex;
+    gap: 1rem;
+}
+
+.detail-item-icon svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--secondaryIconColor);
+}
+/* End of Style Footer */

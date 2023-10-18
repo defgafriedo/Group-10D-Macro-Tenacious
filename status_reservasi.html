@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Reservasi</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="status_reservasi.css">
+    <link rel="stylesheet" href="navbar_profil.html">
+    <link rel="stylesheet" href="footer.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Nav -->
+    <div id="navbar-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#navbar-template").load("navbar_profil.html");
+        });
+    </script>
+    <!-- End of Nav -->
+
+    <div class="wrapper">
+        <div class="konten-title">
+            <div>
+                <h1>Status Reservasi</h1>
+            </div>
+            <div class="search-box">
+                <div class="input-group">
+                    <div class="form-outline">
+                        <input id="search-input" type="search" id="form1" class="form-control" />
+                    </div>
+                    <button id="search-button" type="button" class="btn search-color" style="background-color: #0eb29a;color: white;">
+                        <i class="material-icons">search</i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div id="konten">
+
+
+            <div class="sidebar">
+                <div class="sidebar-title">
+                    <img src="asset/main/profile.jpg" alt="Logo">
+                    <span class="side-title-color"> Shania Gracia</span>
+                </div>
+                <div class="menu-item">
+                    <span>Profile</span>
+                </div>
+                <div class="menu-item">
+                    <span>Tentang Kami</span>
+                </div>
+                <div class="menu-item">
+                    <span>Invoice</span>
+                </div>
+            </div>
+
+            <div class="list-konten">
+                <div class="konten-item">
+                    <div class="item-title-desc">
+                        <div class="item-title">
+                            <H6>JATIMPARK 1</H6>
+                            <CAPtion>wisata alam</CAPtion>
+                        </div>
+                        <div class="item-profile">
+                            <img src="asset/status/wisata.png" alt="">
+                            <div class="item-identity">
+                                Shania Gracia
+                                <br>Wisata
+                                <div class="item-desc">
+                                    Orang
+                                    x5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-desc-side">
+                        <div class="item-status">
+                            <H6>Permintaan Sedang Diprosess ...</H6>
+                        </div>
+                        <div class="item-guide">
+                            <img src="asset/main/profile.jpg" alt="">
+                            <div class="item-guide-identity">
+                                <h6>Pemandu</h6>
+                                <p>Rysan Naufal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-action">
+                        <div class="item-action-title">
+                            <h6>DITERIMA</h6>
+                        </div>
+                        <div class="item-action-desc">
+                            <div class="item-price">
+                                <h6>TOTAL</h6>
+                                <h6>Rp. 700.000</h6>
+                            </div>
+                            <input onclick="window.location.href = 'pembayaran_reservasi.html'" type="button" class="item-action-button" value="LANJUT">
+                        </div>
+                    </div>
+                </div>
+                <div class="konten-item">
+                    <div class="item-title-desc">
+                        <div class="item-title">
+                            <H6>JATIMPARK 1</H6>
+                            <CAPtion>wisata alam</CAPtion>
+                        </div>
+                        <div class="item-profile">
+                            <img src="asset/status/wisata.png" alt="">
+                            <div class="item-identity">
+                                Shania Gracia`
+                                <br>Wisata
+                                <div class="item-desc">
+                                    Orang
+                                    x2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-desc-side">
+                        <div class="item-status">
+                            <H6>Permintaan Sedang Diprosess ...</H6>
+                        </div>
+                        <div class="item-guide">
+                            <img src="asset/main/profile.jpg" alt="">
+                            <div class="item-guide-identity">
+                                <h6>PEMANDU</h6>
+                                <p>Rysan Naufal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-action">
+                        <div class="item-action-title-b">
+                            <h6>MENUNGGU</h6>
+                        </div>
+                        <div class="item-action-desc">
+                            <div class="item-price">
+                                <h6>TOTAL</h6>
+                                <h6>Rp. 240.000</h6>
+                            </div>
+                            <input type="button" class="item-action-button" value="BATAL">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="konten-item">
+                    <div class="item-title-desc">
+                        <div class="item-title">
+                            <H6>JATIMPARK 1</H6>
+                            <CAPtion>wisata alam</CAPtion>
+                        </div>
+                        <div class="item-profile">
+                            <img src="asset/status/wisata.png" alt="">
+                            <div class="item-identity">
+                                Shania Gracia`
+                                <br>Wisata
+                                <div class="item-desc">
+                                    Orang
+                                    x2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-desc-side">
+                        <div class="item-status">
+                            <H6>Permintaan Sedang Diprosess ...</H6>
+                        </div>
+                        <div class="item-guide">
+                            <img src="asset/main/profile.jpg" alt="">
+                            <div class="item-guide-identity">
+                                <h6>PEMANDU</h6>
+                                <p>Rysan Naufal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-action">
+                        <div class="item-action-title-b">
+                            <h6>MENUNGGU</h6>
+                        </div>
+                        <div class="item-action-desc">
+                            <div class="item-price">
+                                <h6>TOTAL</h6>
+                                <h6>Rp. 240.000</h6>
+                            </div>
+                            <input type="button" class="item-action-button" value="BATAL">
+                        </div>
+                    </div>
+
+                </div><div class="konten-item">
+                    <div class="item-title-desc">
+                        <div class="item-title">
+                            <H6>JATIMPARK 1</H6>
+                            <CAPtion>wisata alam</CAPtion>
+                        </div>
+                        <div class="item-profile">
+                            <img src="asset/status/wisata.png" alt="">
+                            <div class="item-identity">
+                                Shania Gracia`
+                                <br>Wisata
+                                <div class="item-desc">
+                                    Orang
+                                    x2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-desc-side">
+                        <div class="item-status">
+                            <H6>Permintaan Sedang Diprosess ...</H6>
+                        </div>
+                        <div class="item-guide">
+                            <img src="asset/main/profile.jpg" alt="">
+                            <div class="item-guide-identity">
+                                <h6>PEMANDU</h6>
+                                <p>Rysan Naufal</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-action">
+                        <div class="item-action-title-b">
+                            <h6>MENUNGGU</h6>
+                        </div>
+                        <div class="item-action-desc">
+                            <div class="item-price">
+                                <h6>TOTAL</h6>
+                                <h6>Rp. 240.000</h6>
+                            </div>
+                            <input type="button" class="item-action-button" value="BATAL">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="konten-pagination">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item">
+                    <a class="page-link pagination-text" href="#" aria-label="Previous">
+                      <span aria-hidden="true">&laquo;</span>
+                    </a>
+                  </li>
+                  <li class="page-item"><a class="page-link pagination-text" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link pagination-text" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link pagination-text" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link pagination-text" href="#" aria-label="Next">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+        </div> -->
+
+    </div>
+
+
+
+    <!-- Footer -->
+    <div id="footer-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer-template").load("footer.html");
+        });
+    </script>
+    <!-- End of Footer -->
+</body>
+
+</html>

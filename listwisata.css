@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
+  --thirdTextColor: #12e1c3;
+  --fourTextColor: #a70a0a;
+
+  --borderColor: #6b6b6b;
+  --lineColor: #818181;
+
+  --itemAbu: #b8b8b8;
+
+  --primaryBackgroundColor: #f3fdff;
+  --secondaryBackgroundColor: #ffffff;
+  --thirdBackgroundColor: #0eb29a;
+
+  --primaryBtnColor: #12e1c3;
+  --secondaryBtnColor: #0eb29a;
+  --thirdBtnColor: #f3fdff;
+
+  --primaryIconColor: #ffffff;
+  --secondaryIconColor: #000000;
+  --primaryIconColorHover: #9b9b9b;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+.act1 {
+    background-color: var(--thirdTextColor);
+    height: 80px;
+}
+
+.title_daftar {
+    text-align: center;
+    margin: 10px;
+    margin-top: 70px;
+}
+
+.konten {
+    margin-bottom: 24px;
+}
+
+.rating {
+    margin-bottom: 10px;
+}
+
+.star {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('path_to_your_star_icon.png');
+    /* Ganti dengan path atau URL ke ikon bintang */
+    background-size: cover;
+}
+
+
+
+/* Style untuk tombol */
+.container-search {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* Align to the right end */
+    width: 100%;
+    /* Adjust width as needed */
+    margin-bottom: 24px;
+    margin-top: -70px;
+}
+
+#search-bar {
+    width: 20%;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.container {
+    margin-bottom: 20px;
+}
+
+.container-search button {
+    background-color: #0EB29A;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.container-search button:hover {
+    background-color: #037867;
+    color: #ffffff;
+}
+
+.card-text {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.card-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-button .btn {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    border-color: #0EB29A;
+    color: #0EB29A;
+}
+
+.card-button .btn:hover {
+    background-color: #037867;
+    color: #ffffff;
+}
+
+.stars {
+    display: flex;
+    flex-direction: row;
+}
+
+.star1,
+.star2,
+.star3,
+.star4,
+.star5 {
+    align-self: center;
+    font-size: 24px;
+}
+
+.star1,
+.star2,
+.star3,
+.star4 {
+    color: gold;
+}
+
+.star5 {
+    color: #E1E1E1;
+}

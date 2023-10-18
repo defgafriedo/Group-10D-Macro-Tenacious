@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="navbar_masuk.html" />
+    <link rel="stylesheet" href="footer.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="halaman_dashboard.css" />
+    <title>Explore Ngalam</title>
+  </head>
+  <body>
+    <!--Navigation bar-->
+    <div id="navbar-template"></div>
+
+    <script>
+      $(function () {
+        $("#navbar-template").load("navbar_masuk.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
+
+    <div class="wrapper">
+      <section id="konten_1">
+        <div class="teks_atas">
+          <h1>
+            <b>Langkah Awal Menuju Perjalanan yang Luar Biasa Di Malang!</b>
+          </h1>
+        </div>
+        <!-- Gambar Atas -->
+        <div class="slider">
+          <div class="slides">
+            <div class="slide first">
+              <img src="images/Wisata/wisataatas1.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Wisata/wisataatas2.png" alt="" />
+            </div>
+            <div class="slide">
+              <img src="images/Wisata/wisataatas3.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <!-- End -->
+      </section>
+    </div>
+
+    <div class="wrapper">
+      <section id="konten_2">
+        <div class="teks_bawah">
+          <h2><b>TRENDING</b></h2>
+          <p>Tempat Wisata Populer</p>
+        </div>
+
+        <div class="wisata_1">
+          <div class="gambar_wisata_1">
+            <img src="images/Wisata/wisata1.PNG" alt="Gambar 1" />
+          </div>
+          <div class="gambar_wisata_1">
+            <img src="images/Wisata/wisata2.PNG" alt="Gambar 2" />
+          </div>
+          <div class="gambar_wisata_1">
+            <img src="images/Wisata/wisata3.PNG" alt="Gambar 3" />
+          </div>
+        </div>
+
+        <div class="wisata_1">
+          <div class="gambar_wisata_1">
+            <img src="images/Wisata/wisata4.PNG" alt="Gambar 1" />
+          </div>
+          <div class="gambar_wisata_1">
+            <img src="images/Wisata/wisata5.PNG" alt="Gambar 2" />
+          </div>
+          <div class="gambar_wisata_1">
+            <img src="images/Wisata/wisata6.PNG" alt="Gambar 3" />
+          </div>
+          <div class="gambar_wisata_1">
+            <img src="images/Wisata/wisata7.PNG" alt="Gambar 3" />
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-template"></div>
+
+    <script>
+      $(function () {
+        $("#footer-template").load("footer.html");
+      });
+    </script>
+    <!-- End of Footer -->
+  </body>
+</html>

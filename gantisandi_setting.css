@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+:root {
+    --primaryTextColor: #ffffff;
+    --secondaryTextColor: #000000;
+    --thirdTextColor: #12E1C3;
+
+    --borderColor: #6b6b6b;
+    --lineColor: #818181;
+
+    --primaryBackgroundColor: #F3FDFF;
+    --secondaryBackgroundColor: #ffffff;
+    --thirdBackgroundColor: #0EB29A;
+
+    --primaryIconColor: #000000;
+    --primaryIconColorHover: #ffffff;
+
+    --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    width: 1200px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    flex-direction: row; /* Mengatur tata letak ke horizontal (baris) */
+    justify-content: space-around; /* Memisahkan elemen dengan jarak di antara mereka */
+    align-items: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .wrapper {
+        width: 90;
+    }
+}
+
+#halaman-ganti-kata-sandi-setting {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Tinggi elemen sesuai dengan tinggi viewport */
+    background-image: url('asset/bgsandi.2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-ganti-sandi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c4f7f0;
+    padding: 20px 20px 20px 20px;
+    border-radius: 10px;
+}
+
+.card-ganti-sandi h1 {
+    font-size: 32px;
+    color: #0EB29A;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.card-ganti-sandi input {
+    font-size: 16px;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    border: 1px solid black;
+}
+
+#tbl-kirim {
+    width: 100%;
+    color: #ffffff;
+    background-color: #0EB29A;
+    padding-left: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+#tbl-kirim:hover {
+    background-color: #0a8561; /* Warna latar belakang saat tombol dihover */
+    border-color: #0a8561; /* Warna border saat tombol dihover */
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="navbar_profil.html">
+  <link rel="stylesheet" href="footer.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="reservasi_wisata.css">
+  <title>Reservasi</title>
+  <style>
+    .custom-checkbox-lg .form-check-input {
+      font-size: 26px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nav -->
+  <div id="navbar-template">
+
+  </div>
+
+  <script>
+      $(function () {
+          $("#navbar-template").load("navbar_profil.html");
+      });
+  </script>
+  <!-- End of Nav -->
+
+
+  <section id="reservasi">
+    <div class="wrapper">
+
+      <div class="title_reservasi">
+        <h2>Reservasi</h2>
+      </div>
+
+      <div class="grid-3">
+        <!-- 1 -->
+        <div class="img_reservasi">
+          <img src="https://i0.wp.com/madhang.com/wp-content/uploads/Wisata-Dreamland-Malang.jpg" alt="">
+        </div>
+
+        <!-- 2 -->
+        <div class="reservsi">
+          <h2>Jatim Park 1</h3>
+            <div class="data_reservasi">
+              <label for="angka">Masukkan Nama Pemesan</label>
+              <input class="form-control" type="text" placeholder="Masukkan Nama Lengkap"
+                aria-label="default input example">
+
+              <label for="angka">Tanggal Pesan</label>
+              <div class="tanggal-dropdown">
+                <select class="tanggal">
+                    <option value="">Tanggal</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <!-- Tambahkan semua tanggal yang Anda butuhkan -->
+                </select>
+                <select class="bulan">
+                    <option value="">Bulan</option>
+                    <option value="Januari">Januari</option>
+                    <option value="Februari">Februari</option>
+                    <option value="Maret">Maret</option>
+                    <option value="April">April</option>
+                    <option value="Mei">Mei</option>
+                    <option value="Juni">Juni</option>
+                    <option value="Juli">Juli</option>
+                    <option value="Agustus">Agustus</option>
+                    <option value="September">September</option>
+                    <option value="Oktober">Oktober</option>
+                    <option value="November">November</option>
+                    <option value="Desember">Desember</option>
+                    <!-- Tambahkan semua bulan yang Anda butuhkan -->
+                </select>
+                <select class="tahun">
+                    <option value="">Tahun</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    <option value="2025">2025</option>
+                    <option value="2026">2026</option>
+                    <option value="2027">2027</option>
+                    <!-- Tambahkan semua tahun yang Anda butuhkan -->
+                </select>
+              </div>
+
+              <label for="angka">Jumlah Orang</label>
+              <input type="number" id="angka" name="angka" placeholder="-" required>
+
+              <label for="angka">Keperluan</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Keperluan</option>
+                <option value="1">Liburan</option>
+                <option value="2">Pernikahan</option>
+                <option value="3">Acara Keluarga</option>
+              </select>
+              <label for="angka">Pemandu Lokal</label>
+              <div class="custom-control custom-checkbox custom-checkbox-lg">
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+              </div>
+            </div>
+        </div>
+
+        <!-- 3 -->
+        <h2 class="harga">Rp. 100.000</h2>
+      </div>
+
+      <div class="btn-pesan">
+        <button onclick="window.location.href = 'status_reservasi.html'" class="custom-button">Pesan</button>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <div id="footer-template">
+
+  </div>
+
+  <script>
+      $(function () {
+          $("#footer-template").load("footer.html");
+      });
+  </script>
+  <!-- End of Footer -->
+</body>
+
+</html>

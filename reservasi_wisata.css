@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
+  --thirdTextColor: #12e1c3;
+  --fourTextColor: #a70a0a;
+
+  --borderColor: #6b6b6b;
+  --lineColor: #818181;
+
+  --itemAbu: #b8b8b8;
+
+  --primaryBackgroundColor: #f3fdff;
+  --secondaryBackgroundColor: #ffffff;
+  --thirdBackgroundColor: #0eb29a;
+
+  --primaryBtnColor: #0a8561;
+  --secondaryBtnColor: #0eb29a;
+  --thirdBtnColor: #f3fdff;
+
+  --primaryIconColor: #ffffff;
+  --secondaryIconColor: #000000;
+  --primaryIconColorHover: #9b9b9b;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+
+
+/* Style Gambar dan Input Reservasi */
+.title_reservasi {
+    margin-top: 110px;
+    /* margin-bottom: 50px; */
+}
+
+.img_reservasi img {
+    width: 90%;
+    height: auto;
+    border-radius: var(--itemBorderRadius);
+    object-fit: cover;
+}
+
+/* Harga */
+.harga {
+    text-align: right;
+}
+
+/* Input data */
+.data_reservasi {
+    margin-top: 20px;
+}
+
+/* Layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 20px;
+}
+
+/* Background */
+.grid-3 {
+    background: var(--secondaryBackgroundColor);
+    padding: 1rem;
+    border-radius: var(--itemBorderRadius);
+    box-shadow: 4px 5px 7px -2px rgba(0, 0, 0, 0.5);
+}
+
+/* Label */
+.data_reservasi label {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/* Input */
+input[type="number"] {
+    padding: 10px;
+    width: 70px;
+    height: 37px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tanggal */
+.tanggal-dropdown {
+    display: flex;
+    gap: 10px;
+}
+
+.tanggal,
+.bulan,
+.tahun {
+    background: #fff;
+    height: 35px;
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Input Placeholder Text */
+input::placeholder {
+    color: #363636;
+}
+
+/* Input Focus */
+input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.form-check-input {
+    border: 2px solid #ccc;
+}
+/* Style Gambar dan Input Reservasi */
+
+
+
+/* Style button */
+.custom-button {
+    padding: 10px 20px;
+    background-color: var(--secondaryBtnColor);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px; 
+}
+
+.custom-button:hover {
+    background-color: var(--primaryBtnColor);
+}
+
+.custom-button:active {
+    background-color: var(--secondaryBtnColor);
+}
+
+.btn-pesan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+/* End of Style Button */

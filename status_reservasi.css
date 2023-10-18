@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* html {
+  background-color: #02242d;
+} */
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+.konten-title {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 8% 5% 35%;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+}
+
+.search-box {
+  align-items: flex-end;
+  z-index: -1;
+}
+
+
+#search-button {
+  background-color: #0eb29a;
+}
+
+#search-color:hover {
+  background-color: #037867;
+}
+
+#konten {
+  display: flex;
+  flex-direction: row;
+  margin: 5% 8% 5% 8%;
+  gap: 11%;
+}
+
+.sidebar {
+  display: flex;
+  width: 20%;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-title {
+  display: flex;
+  width: 313px;
+  padding: 16px 30% 16px 30%;
+  align-items: center;
+  background: #037867;
+  gap: 10px;
+}
+
+.sidebar-title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+}
+
+.menu-item {
+  display: flex;
+  width: 313px;
+  padding: 16px 30% 16px 30%;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.menu-item:hover {
+  display: flex;
+  width: 313px;
+  padding: 16px 30% 16px 30%;
+  align-items: center;
+  background: #037867;
+}
+
+.list-konten {
+  background-color: #037867;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #c4f7f0;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 3% 0% 3% 0%;
+}
+
+.konten-item {
+  width: 85%;
+  margin: 2% 0% 2% 0%;
+  background-color: #ffffff;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.item-title {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.item-status h6 {
+  color: #037867;
+  font-size: small;
+}
+
+.item-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+  font-size: small;
+  font-weight: 400;
+}
+
+.item-profile img {
+  width: 85px;
+  height: 67.5px;
+}
+
+.item-identity {
+  display: flex;
+  flex-direction: column;
+}
+.item-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.item-title-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  gap: 15px;
+}
+.item-desc-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  gap: 15px;
+}
+
+.item-guide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.item-guide img {
+  width: 85px;
+  height: 67.5px;
+  border-radius: 10px;
+}
+.item-guide-identity h6 {
+  font-size: smaller;
+}
+.item-guide-identity p {
+  font-size: small;
+}
+
+.item-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 90%;
+  gap: 15px;
+}
+
+.item-action-title h6 {
+  font-size: x-small;
+  display: flex;
+  justify-content: center;
+  background-color: #037867;
+  color: white;
+  padding: 1% 1% 1% 1%;
+  border-radius: 10px;
+}
+
+.item-action-title-b h6 {
+  font-size: x-small;
+  display: flex;
+  justify-content: center;
+  background-color: #b20e26;
+  color: white;
+  padding: 2% 2% 2% 2%;
+  border-radius: 10px;
+}
+.item-price h6 {
+  font-size: x-small;
+  font-weight: 600;
+}
+
+.item-action-button {
+  font-size: x-small;
+  background-color: #0eb29a;
+  border-style: none;
+  color: white;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+}
+
+.item-action-button:hover {
+  font-size: x-small;
+  background-color: #037867;
+  border-style: none;
+  color: white;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+}
+.konten-pagination {
+  display: flex;
+  margin-left: 56%;
+}
+
+.pagination-text {
+  color: #0eb29a;
+}
+
+.pagination-text:hover {
+  color: #ffffff;
+  background-color: #0eb29a;
+}
+.side-title-color {
+  color: #ffffff;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags and title -->
+
+    <!-- Bootstrap CSS and JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="navbar_masuk.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="daftar.css">
+
+
+    <title>ExploreNgalam</title>
+</head>
+
+
+<body>
+
+    <!--Navigation bar-->
+    <div id="navbar-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#navbar-template").load("navbar_masuk.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <section id="halaman-daftar">
+        <div class="wrap-konten">
+            <div class="card-daftar">
+                <h1>Daftar</h1>
+
+                <div class="input-nama-lengkap">
+                    <input type="text" id="input-nama-depan" class="form-control form-control-lg"
+                        placeholder="Nama Depan" />
+                    <input type="email" id="input-nama-belakang" class="form-control form-control-lg"
+                        placeholder="Nama belakang" />
+                </div>
+                <!-- Email input -->
+                <input type="email" id="input-email" class="form-control form-control-lg" placeholder="Email" />
+
+                <!-- Password input -->
+                <input type="password" id="input-kata-sandi" class="form-control form-control-lg"
+                    placeholder="Password" />
+
+                <div class="container">
+                    <label class="label-angka" for="angka">Tanggal Lahir:</label>
+                    <div class="tanggal-dropdown">
+                        <select class="tanggal">
+                            <option value="">Tanggal</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                            <option value="16">16</option>
+                            <option value="17">17</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <!-- Tambahkan semua tanggal yang Anda butuhkan -->
+                        </select>
+                        <select class="bulan">
+                            <option value="">Bulan</option>
+                            <option value="Januari">Januari</option>
+                            <option value="Februari">Februari</option>
+                            <option value="Maret">Maret</option>
+                            <option value="April">April</option>
+                            <option value="Mei">Mei</option>
+                            <option value="Juni">Juni</option>
+                            <option value="Juli">Juli</option>
+                            <option value="Agustus">Agustus</option>
+                            <option value="September">September</option>
+                            <option value="Oktober">Oktober</option>
+                            <option value="November">November</option>
+                            <option value="Desember">Desember</option>
+                            <!-- Tambahkan semua bulan yang Anda butuhkan -->
+                        </select>
+                        <select class="tahun">
+                            <option value="">Tahun</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                            <option value="2026">2026</option>
+                            <option value="2027">2027</option>
+                            <!-- Tambahkan semua tahun yang Anda butuhkan -->
+                        </select>
+                    </div>
+                </div>
+                <div class="container">
+                    <p>Pilih Jenis Kelamin:</p>
+                    <select>
+                        <option value="" disabled selected>-- Pilih Jenis Kelamin --</option>
+                        <option value="laki-laki">Laki-laki</option>
+                        <option value="perempuan">Perempuan</option>
+                    </select>
+                </div>
+
+                <!-- Submit button -->
+                <button onclick="window.location.href = 'login.html'" type="button" id="tbl-daftar" class="btn btn-primary btn-lg btn-block">Daftar</button>
+
+                <div class="pemisah">
+                    <div class="garis"></div>
+                    <p>Atau</p>
+                    <div class="garis"></div>
+                </div>
+
+                <a class="btn btn-primary btn-lg btn-block" id="tbl-masuk-google" href="halaman_dashboard.html" role="button">
+                    <span class="google-text">Masuk Dengan Google</span>
+                </a>
+                <div id="sudah-punya-akun">
+                    <p>Sudah punya akun?</p>
+                    <a href="login.html" class="link-sudah-punya-akun">Masuk</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <div id="footer-template">
+
+    </div>
+
+    <script>
+        $(function () {
+            $("#footer-template").load("footer.html");
+        });
+    </script>
+    <!--end of Footer-->
+
+</body>
+
+</html>

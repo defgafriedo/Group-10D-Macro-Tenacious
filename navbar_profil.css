@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
+  --thirdTextColor: #12e1c3;
+  --fourTextColor: #a70a0a;
+
+
+  --borderColor: #6b6b6b;
+  --lineColor: #818181;
+
+  --itemAbu: #b8b8b8;
+
+  --primaryBackgroundColor: #f3fdff;
+  --secondaryBackgroundColor: #ffffff;
+  --thirdBackgroundColor: #0eb29a;
+  --fourBakcgroundColor : #C4F7F0;
+
+  --primaryBtnColor: #0a8561;
+  --secondaryBtnColor: #0eb29a;
+  --thirdBtnColor: #f3fdff;
+
+  --primaryIconColor: #ffffff;
+  --secondaryIconColor: #000000;
+  --primaryIconColorHover: #9b9b9b;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+/* Logo and Navigasi */
+.logo {
+  max-width: 105px;
+}
+
+.menu {
+  float: right;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: fixed;
+  top: 0;
+  background: var(--thirdBackgroundColor);
+  z-index: 1;
+}
+
+nav a {
+  font-size: 16px;
+  font-weight: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  float: left;
+  margin-right: 16px;
+}
+
+nav ul li a {
+  color: var(--primaryTextColor);
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+
+nav ul li a:hover {
+  background-color: var(--fourBakcgroundColor);
+  color: black;
+  height: 80px;
+  padding : 12px;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: var(--fourBakcgroundColor);
+  color: black;
+  padding: 12px;
+  border-radius: 5px;
+}
+
+.inisial {
+  background: var(--thirdTextColor);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primaryTextColor);
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
+
+}
+
+.fas {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#profil-button {
+  display: flex; /* Use flexbox */
+  align-items: center; /* Align items vertically */
+  justify-content: center; /* Align items horizontally */
+  background-color: var(--thirdBackgroundColor); /* Default background color */
+  color: white; /* Default text color */
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+}
+
+#profil-button.clicked {
+  background-color: var(--fourBakcgroundColor); /* Background color when clicked */
+  color: var(--secondaryTextColor);
+}
+
+#profil-button:hover {
+  background-color: var(--fourBakcgroundColor); /* Background color on hover */
+  color: var(--secondaryTextColor);
+}
+
+#profil-text {
+  margin: 0;
+}
+
+#profil-dropdown {
+  display: none;
+}
+
+#profil-button:hover #profil-dropdown {
+  display: block;
+}
+
+#profil-button p {
+  margin: 0;
+  padding: 0;
+}
+
+#profil-button li {
+  margin-right: 0px;
+}
+
+
+/* Dropdown */
+nav ul li ul.dropdown {
+  display: none;
+  position: absolute;
+  background-color: var(--fourBakcgroundColor);
+  margin-left: 23px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+nav ul li:hover ul.dropdown {
+  display: block;
+}
+
+nav ul li ul.dropdown li {
+  float: none;
+}
+
+nav ul li ul.dropdown li a {
+  color: var(--secondaryTextColor);
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  line-height: 40px;
+}
+
+nav ul li ul.dropdown li a:hover {
+  background-color: var(--thirdTextColor);
+}
+/* End of Dropdown */
+/* End of Logo and Navigasi */

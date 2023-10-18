@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+
+:root {
+  --primaryTextColor: #ffffff;
+  --secondaryTextColor: #000000;
+  --thirdTextColor: #12e1c3;
+  --fourTextColor: #a70a0a;
+
+  --borderColor: #6b6b6b;
+  --lineColor: #818181;
+
+  --itemAbu: #b8b8b8;
+
+  --primaryBackgroundColor: #f3fdff;
+  --secondaryBackgroundColor: #ffffff;
+  --thirdBackgroundColor: #0eb29a;
+
+  --primaryBtnColor: #12e1c3;
+  --secondaryBtnColor: #0eb29a;
+  --thirdBtnColor: #f3fdff;
+  --fourBtnColor: #0a8561;
+
+  --primaryIconColor: #ffffff;
+  --secondaryIconColor: #000000;
+  --primaryIconColorHover: #9b9b9b;
+
+  --itemBorderRadius: 0.7rem;
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--primaryBackgroundColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrapper {
+  width: 1200px;
+  margin: auto;
+  position: relative;
+}
+
+@media screen and (max-width: 1200px) {
+  .wrapper {
+    width: 90;
+  }
+}
+
+
+
+/* Teks & Gambar Atas */
+#konten_1 {
+    display: grid;
+    grid-template-rows: 0.2fr 0.2fr;
+    align-items: center;
+    padding: 1rem 0;
+    margin-top: 80px;
+}
+
+.teks_atas h1 {
+    font-size: 24px;
+}
+
+.slider {
+  height: 375px;
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  border-radius: var(--itemBorderRadius);
+  margin-bottom: 50px;
+}
+
+.slides {
+  display: flex;
+  animation: slide-animation 20s infinite;
+}
+
+.slide {
+  min-width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 375px;
+  object-fit: cover;
+}
+
+@keyframes slide-animation {
+  0% {
+      transform: translateX(0);
+  }
+  33.33% {
+      transform: translateX(-100%);
+  }
+  66.66% {
+      transform: translateX(-200%);
+  }
+  100% {
+      transform: translateX(0);
+  }
+}
+
+
+
+/* Teks & 3, 4 Gambar */
+#konten_2 {
+  margin-bottom: 80px;
+}
+
+.wisata_1 {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.gambar_wisata_1 {
+    margin: 7px;
+}
+
+.gambar_wisata_1 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: var(--itemBorderRadius);
+}
