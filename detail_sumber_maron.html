@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="navbar_masuk.html">
+  <link rel="stylesheet" href="footer.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="detail_sumber_maron.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Detail Wisata</title>
+</head>
+
+<body>
+  <!-- Nav -->
+  <div id="navbar-template">
+
+  </div>
+
+  <script>
+    $(function () {
+      $("#navbar-template").load("navbar_masuk.html");
+    });
+  </script>
+  <!-- End of Nav -->
+
+  <!-- Section -->
+  <section id="detail_wisata">
+    <div class="wrapper">
+      <div class="tittle_detail">
+        <h2><b>Sumber Maron</b></h2>
+        <p>Dusun Adi Luwih, Karangsuko, Kec. Pagelaran, Kabupaten Malang, Jawa Timur 65174</p>
+      </div>
+      <!-- Gambar Atas -->
+      <div class="slider">
+        <div class="slides">
+          <div class="slide first">
+            <img src="asset/sumbermaron/sumbermaron1.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="asset/sumbermaron/sumbermaron2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="asset/sumbermaron/sumbermaron3.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      <!-- End -->
+
+      <div class="grid-2">
+        <!-- Grid 1 -->
+        <div class="bagian_kiri">
+          <h5 class="desk_wis"><b>Deskripsi</b></h5>
+          <div class="box-container">
+            <div class="box">
+              <i class="bi bi-people-fill"></i>Family Friendly
+            </div>
+            <div class="box">
+              <i class="bi bi-flag-fill"></i>Beragam Wahana
+            </div>
+            <div class="box">
+              <i class="bi bi-book-fill"></i>Wisata Edukasi
+            </div>
+            <div class="box">
+              <i class="bi bi-person-fill"></i>Pemandu Wisata
+            </div>
+          </div>
+
+          <div class="deskripsi">
+            <p>
+              Sumber Maron adalah destinasi wisata yang menawarkan fasilitas pemandian dengan air alami yang
+              menyegarkan. Selain mempesona dengan keindahan alamnya, tempat ini juga menyediakan aspek edukatif yang
+              dapat meningkatkan pengetahuan para pengunjung yang berkunjung ke sini. Berikut ini adalah beberapa wahana
+              populer yang terdapat di Sumber Maron:
+            </p>
+            <ol>
+              <li>River Tubing</li>
+              <li>Flying Fox</li>
+              <li>Terapi Ikan</li>
+              <li>Aliran sungai yang alami</li>
+              <li>Pembangkit Listrik Tenaga Mikro Hidro (PLTMH)</li>
+            </ol>
+          </div>
+
+          <div class="button_gabung">
+            <div class="btn-pesan">
+              <button onclick="window.location.href = 'login.html'" class="custom-button">Pesan Tiket</button>
+            </div>
+            <div class="btn-pesan">
+              <button onclick="window.location.href = 'reservasi_wisata.html'" class="custom-button">Reservasi</button>
+            </div>
+          </div>
+
+          <div class="rating_ulasan">
+            <div onclick="window.location.href = 'review.html'" class="rating">
+              <h3><b>4.7</b></h3>
+              <div class="konten-star">
+                <i class="material-icons icon-star-color">star</i>
+                <i class="material-icons icon-star-color">star</i>
+                <i class="material-icons icon-star-color">star</i>
+                <i class="material-icons icon-star-color">star</i>
+                <i class="material-icons icon-star-color_a">star</i>
+              </div>
+            </div>
+            <div class="text_ulasan">
+              <h4><b>ULASAN</b></h4>
+              <p>Jadilah yang pertama untuk mengulas</p>
+              <input class="form-control" type="text" placeholder="Masukkan ulasan" aria-label="default input example">
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid 2 -->
+        <div class="bagian_kanan">
+          <h5 class="desk_wis"><b>Wisata Serupa Lainnya</b></h5>
+
+          <div class="wisata_serupa">
+            <div class="img_wisata">
+              <img src="asset/WisataSerupa/wisata1.jpg" alt="" />
+            </div>
+            <div class="text_wisata">
+              <h4>Flora Wisata San Terra</h4>
+              <a href="detail_florasan.html">
+                <p>Lihat Selanjutanya</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="wisata_serupa">
+            <div class="img_wisata">
+              <img src="asset/WisataSerupa/wisata2.jpg" alt="" />
+            </div>
+            <div class="text_wisata">
+              <h4>Museum Angkut</h4>
+              <a href="detail_angkot.html">
+                <p>Lihat Selanjutanya</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="wisata_serupa">
+            <div class="img_wisata">
+              <img src="asset/WisataSerupa/wisata3.jpg" alt="" />
+            </div>
+            <div class="text_wisata">
+              <h4>Eco Green Park</h4>
+              <a href="detail_eco_green.html">
+                <p>Lihat Selanjutanya</p>
+              </a>
+            </div>
+          </div>
+
+          <div class="wisata_serupa">
+            <div class="img_wisata">
+              <img src="asset/WisataSerupa/wisata4.jpg" alt="" />
+            </div>
+            <div class="text_wisata">
+              <h4>Batu Secret Zoo</h4>
+              <a href="detail_secret.html">
+                <p>Lihat Selanjutanya</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End of Section -->
+
+  <!-- Footer -->
+  <div id="footer-template">
+
+  </div>
+
+  <script>
+    $(function () {
+      $("#footer-template").load("footer.html");
+    });
+  </script>
+  <!-- End of Footer -->
+</body>
+
+</html>
